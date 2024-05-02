@@ -1,0 +1,38 @@
+.recovery{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    position: relative;
+}
+.recovery:before {
+    content: '';
+    position: absolute;
+    background: url('../../Assets/recovery-bg.png')no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.recovery .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 19%;
+    top: 30%;
+    width: 50%;
+}
+
+.recovery h2{
+    color: white;
+}
+.recovery p{
+    color: white;
+    margin: 1rem 0;
+}
+@media screen and (max-width:940px) {
+    .recovery .content{
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        background: rgba(255,255,255,0.7);
+}}
